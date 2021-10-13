@@ -69,4 +69,17 @@ distinct(strawb, units)
 ################################################
 
 
+################ Solution
+
+# set variable to collect values
+
+T <- NULL
+
+# collect number of unique rows in each column
+
+for (i in x) {
+  T <- c(T, dim(unique(strawb[i]))[1])
+}
+
+unique(strawb[4])
 
